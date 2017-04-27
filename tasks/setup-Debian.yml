@@ -1,6 +1,6 @@
 ---
 - apt_repository:
-  repo: 'ppa:ondrej/apache2'
+    repo: 'ppa:ondrej/apache2'
   when:
     - apache_http2_support is defined
     - apache_http2_support
