@@ -1,4 +1,10 @@
 ---
+- apt_repository:
+  repo: 'ppa:ondrej/apache2'
+  when:
+    - apache_http2_support is defined
+    - apache_http2_support
+
 - name: Update apt cache.
   apt: update_cache=yes cache_valid_time=3600
 
