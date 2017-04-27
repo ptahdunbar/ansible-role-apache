@@ -25,6 +25,8 @@ apache_vhosts:
 apache_allow_override: "All"
 apache_options: "-Indexes +FollowSymLinks"
 
+apache_http2_support: true
+
 apache_vhosts_ssl: []
   # Additional properties:
   # 'serveradmin, serveralias, allow_override, options, extra_parameters'.
